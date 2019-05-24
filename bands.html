@@ -10,18 +10,30 @@
 </head>
 
 <body>
-    <script type="text/javascript" src="script.js">
+    <script type="text/javascript">
 
         //Create an array of your favorite bands//
-        var bands = ["U2", "Red Hot Chili Pepers", "Coldplay", "The Smiths"];
+        var myBands = ["U2", "Red Hot Chili Pepers", "Coldplay", "The Smiths"];
 
         //With a prompt, ask the user's favorite band.//
-
+        var favBand = prompt("What's your favorite band?");
+            //Just to check//
+            alert (favBand);
+        
+        //To lower case the band name//
+        //var favBandLower = favBand.toLowerCase();//
+        //Just to check//
+            //alert(favBandLower);//
 
         //If it's one of your favorites, alert: "YEAH I LOVE THEM!"//
+        if (myBands.indexOf(favBand) === -1) {
+            alert ("Nah. They're pretty lame."); 
+        }
+        else {
+            alert ("YEAH I LOVE THEM!");      
+         }
 
-
-        //If it's not, alert: "Nah. They're pretty lame."//
+        
         
         //.indexOf() and .toLowerCase()//
 
